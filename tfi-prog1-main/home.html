@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/tfi.css">
-    <link rel="stylesheet" href="detalles.html">
     <title>Tuflow</title>
 </head>
 
@@ -23,9 +22,13 @@
                 <li> <a class="a" href=""> Siguiendo </a> </li>
                 <li> <a class="a" href=""> Mi playlist </a> </li>
                 <li>
-                    <form action="results.html" method="GET"> </form>
-                    <label> Buscar: </label>
-                    <input type="text" name="buscar" value="">
+                    <form action="buscador.html" method="GET">
+                        <p>
+                            Buscador <input type="search" name="Buscar" placeholder="Cancion, Album, Artista...">
+                            <input type="submit" value="Buscar">
+                        </p>
+                    </form>
+                    
                 </li>
 
             </ul>
@@ -39,7 +42,7 @@
         </nav>
     </header>
     <!--fin de encabezado-->
-    <main>
+
         <ul class="carrusel" id="carrusel">
            <li><img class="ozuna" src="https://images.alphacoders.com/999/999717.jpg" alt="ozuna"></li> 
 
@@ -50,8 +53,7 @@
            <li><img src="https://billboard.com.ar/wp-content/uploads/2021/02/unnamed-12.jpg" alt="Maria Becerra"></li>
 
         </ul>
-Top Canciones Argentina
-Top Artists America Latina
+
 
          <h2 class="homeCanciones">Top Canciones Globales</h2>
 
@@ -90,7 +92,7 @@ Top Artists America Latina
 
             <li>
                 <div>
-                    <img src="https://lh3.googleusercontent.com/proxy/YEAi1IIlQkssmNFlmw3sI8NgmzgDh5KPBtAv-svP35Iuh2vJC3uCis3Mbl7E0aHE_71VYe-D2P8cXiTcOA6WX75hmhzfrQ4KluiYeRgY5Tt5IMXRYfw" alt="Camilo">
+                    <img src="https://lh3.googleusercontent.com/proxy/Enq9Y-pZ4RK5lVFHY40ns6UHhcIjyrz0xoMGWOsh6HQE12EIwPKyJ5PwUr7Ojg7H7oc9JtKSBk4FCqd7oqfCs0aMj5Kbh617xJUq3k3f4Eaz8f57fqM" alt="Camilo">
                     <h3>Ropa Cara - Camilo</h3>
                 </div>
             </li>
@@ -177,10 +179,42 @@ Top Artists America Latina
 
         </ul>
 
+        <footer>
+            <div class="nombres">
+                <p>Lucio Fernandez Gutnisky</p>
+                <p>Simon Gazzera</p>
+                <p>Tomas Poitevin</p>
+            </div>
+            <div class="contacto">
+                <a href="mailto:tuflowtfi@gmail.com">Contact</a>
+            </div>
+            <div class="redesSociales">
+
+                <a href="https://es-la.facebook.com">
+                    <img src="img/facebook.png" alt="facebook">
+                </a>
+
+                <a href="https://twitter.com/?lang=es">
+                    <img src="img/twitter.png" alt="twitter">
+                </a>
+
+                <a href="https://www.youtube.com/">
+                    <img src="img/youtube.png" alt="youtube">
+                </a>
+
+                <a href="https://www.instagram.com/accounts/login/">
+                    <img src="img/instagram.png" alt="instagram">
+                </a>
+
+                <a href="http://127.0.0.1:5500/tfi-prog1-main/home.html">
+                    <img class="tuflow" src="https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/c1/ae/3d/c1ae3d6d-8629-acd0-6ec6-8fd4e4a1b9b8/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png" alt="Logo TMDB">
+                </a>
+               
+            </div>
+
+        </footer>
 
 
-
-    </main>
 </body>
 
 </html>
