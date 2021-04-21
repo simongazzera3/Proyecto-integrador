@@ -172,3 +172,21 @@ footer{
     list-style: none;
     display: flex;
 }
+
+.aside{
+    width:300px; 
+    margin-left: 10px;
+ }
+
+ .imagenesdetalles {
+    border-radius: 8px;
+    margin-left: 900px;
+    width: 300px;
+ }
+
+ .textodetalles {
+    background-color: black;
+    font-family: sans-serif; 
+    font-size: 15px ;
+    color:white;
+ }
