@@ -190,3 +190,28 @@ footer{
     font-size: 15px ;
     color:white;
  }
+
+ .resultadosBusqueda{
+     color: white;
+     font-weight: normal;
+ }
+ 
+.Resultados{
+    list-style: none;
+    display: flex;
+    text-decoration: none;
+}
+
+.Resultados img{
+    max-width: 300px;
+    box-sizing: border-box;
+    flex: none;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+.resultados{
+    list-style: none;
+    display: flex;
+}
