@@ -215,3 +215,23 @@ footer{
     list-style: none;
     display: flex;
 }
+.detallesGenerosTit{
+    font-size: 1.7rem;
+    line-height: 1.3;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    font-weight: normal;
+}
+.detallesVariosGeneros img {
+    max-width: 100%;
+    box-sizing: border-box;
+    flex: none;
+    padding: 20px;
+    height: 300px;
+    width: 400px;
+}
+.detallesVariosGeneros {
+    list-style: none;
+    display: flex;
+}
