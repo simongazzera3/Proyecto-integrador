@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
+    padding: 0;
+    margin:0; 
+    text-decoration: none;
+    list-style: none;
 }
+
 body{
     background-color: black;
     font-family: sans-serif; 
@@ -21,35 +26,334 @@ label{
 
 header{ 
     background-color: rgb(0, 8, 124);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     margin-bottom: 30px;
     margin: auto;
     padding: 10px;
+    height: 375px;
+    box-sizing: border-box;
 }
 
 nav{ 
     margin-left: 30px;
+    box-sizing: border-box;
+    height: 375px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 ul {
     list-style:none;
-    margin: 10px;
+    margin: 0px;
     padding: 0px;
+    text-align: center;
+
+
 }
 
 header ul li a, header ul li form{
     color: white;
     font-weight: normal;
-    padding: 10px;
-    display: flex;
+    text-decoration: none;
+    text-align: center;
+
 }
 
-header ul{ 
-    display: flex;
+.nav-list {
+    width: 100%;
+    height: 0vh;
+    top: 75px;
+    float: right;
+    text-align: center; 
 }
 
+.nav-list li {
+    opacity: 1;
+    line-height: 30px;
+    margin: 50px 0;
+    text-align: center; 
+
+}
+
+.nav-list li a { 
+    color:rgb(255, 152, 152);
+    font-weight: bold;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center; 
+
+}
+
+.nav-list li a.active, .nav-list li a:hover { 
+    color:rgb(105, 38, 38);
+    transition: 0.5s;
+    
+}
+
+.nav-list li a.active, .navlist li a:hover { 
+    color:rgb(255, 152, 152);
+    transition: 0.5s;
+}
+
+.hamburger-btn {
+    display: flex;
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 75px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+#check ~ check .nav-list {
+    height: 100vh;
+}
+
+#check ~ check .nav-list li{
+    opacity: 1;
+}
+
+.carrusel{
+    list-style: none;
+    display: block;   
+}
+
+ul.carrusel img {
+    max-width: 100%;
+    box-sizing: border-box;
+    flex: block;
+    padding: 20px;
+    height: 300px;
+    width: 600px;
+}
+
+.homeCanciones {
+    font-size: 1.7rem;
+    line-height: 1.3;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    font-weight: normal;
+}
+
+h3{
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+.cancionesHome {
+    list-style: none;
+    display: block;
+}
+
+.cancionesHome img {
+    max-width: 100%;
+    box-sizing: border-box;
+    flex: none;
+    padding: 20px;
+    height: 300px;
+    width: 400px;
+}
+
+.detallesCancionesHome{
+    text-decoration: none;
+}
+
+footer{
+    display: grid;
+    grid-template-rows: 2;
+    background-color: red;
+    color: whitesmoke;
+}
+
+.nombres{
+    display: block;
+    justify-content: space-between;
+}
+
+.contacto{
+    text-align: center;
+    color: whitesmoke;
+}
+
+.redesSociales{
+    text-align: center;
+}
+
+.redesSociales img{
+    max-width: 100%;
+    padding: 20px;
+    height: 100px;
+}
+
+.tuFlow{
+    text-align: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+}
+
+.playlistTit{
+    font-size: 1.7rem;
+    line-height: 1.3;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    font-weight: normal;
+}
+.cancionesPlaylist img {
+    max-width: 100%;
+    box-sizing: border-box;
+    flex: block;
+    padding: 20px;
+    height: 300px;
+    width: 400px;
+}
+.cancionesPlaylist {
+    list-style: none;
+    display: block;
+}
+.generosTit{
+    font-size: 1.7rem;
+    line-height: 1.3;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    font-weight: normal;
+}
+.variosGeneros img {
+    max-width: 100%;
+    box-sizing: border-box;
+    flex: block;
+    padding: 20px;
+    height: 300px;
+    width: 400px;
+}
+.variosGeneros {
+    list-style: none;
+    display: block;
+}
+
+ .imagenesdetalles {
+    border-radius: 8px;
+    width: 300px;
+ }
+
+ .textodetalles {
+    background-color: black;
+    font-family: sans-serif; 
+    font-size: 15px ;
+    color:white;
+ }
+
+ .resultadosBusqueda{
+     color: white;
+     font-weight: normal;
+ }
+ 
+.Resultados{
+    list-style: none;
+    display: block;
+    text-decoration: none;
+}
+
+.Resultados img{
+    max-width: 300px;
+    box-sizing: border-box;
+    flex: block;
+    padding: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+.resultados{
+    list-style: none;
+    display: block;
+}
+.detallesGenerosTit{
+    font-size: 1.7rem;
+    line-height: 1.3;
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    font-weight: normal;
+}
+.detallesVariosGeneros img {
+    max-width: 100%;
+    box-sizing: border-box;
+    flex: none;
+    padding: 20px;
+    height: 300px;
+    width: 400px;
+}
+.detallesVariosGeneros {
+    list-style: none;
+    display: block;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+@media (min-width:1024px) {
+    .a{ 
+        color: white;
+        font-size: 20px;
+        text-decoration: none;   
+    }
+
+    label{ 
+        color: white;
+        font-size: 20px;
+        text-decoration: none; 
+
+    }
+    
+    header{ 
+        background-color: rgb(0, 8, 124);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    body{
+        background-color: black;
+        font-size: 15px ;
+    }
+    
+    nav{ 
+        margin-left: 30px;
+    }
+    
+    ul {
+        list-style:none;
+        margin: 10px;
+        padding: 0px;
+    }
+    
+    header ul li a, header ul li form{
+        color: white;
+        font-weight: normal;
+        padding: 10px;
+        display: flex;
+    
+    }
+    
+    header ul{ 
+        display: flex;
+     
+    }
+    
 .carrusel{
     list-style: none;
     display: flex;
@@ -173,14 +477,8 @@ footer{
     display: flex;
 }
 
-.aside{
-    width:300px; 
-    margin-left: 10px;
- }
-
  .imagenesdetalles {
     border-radius: 8px;
-    margin-left: 900px;
     width: 300px;
  }
 
@@ -235,3 +533,6 @@ footer{
     list-style: none;
     display: flex;
 }
+
+
+} 

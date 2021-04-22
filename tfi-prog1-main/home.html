@@ -6,45 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/tfi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/441b2fd9a3.js" crossorigin="anonymous"></script>
     <title>Tuflow</title>
 </head>
 
 <body>
-
-    <header class="contendor">
-        <!--encabezado-->
-        <a href="home.html">
-        
-        <img src="img/logo.png"
-            alt="Tuflow" style="width:120px;">
-        </a>
+    <!--encabezado-->
+    <header>
         <nav>
-            <ul>
-                <li> <a class="a" href="genres.html"> Generos </a> </li>
-                <li> <a class="a" href=""> Siguiendo </a> </li>
-                <li> <a class="a" href="playlist.html"> Mi playlist </a> </li>
+            <div> 
+        <a href="home.html">
+        <img class="logo-container" src="img/logo.png" alt="Tuflow" style="width:120px;">
+        </a>
+        </div>
+        <input type="checkbox" id="check"> 
+        <label for="check" class="hamburger-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul class="nav-list">
+                <li> <a class="active" href="genres.html"> Generos </a> </li>
+                <li> <a class="active" href=""> Siguiendo </a> </li>
+                <li> <a class="active " href="playlist.html"> Mi playlist </a> </li>
                 <li>
                     <form action="buscador.html" method="GET">
                         <p>
                             Buscador <input type="search" name="Buscar" placeholder="Cancion, Album, Artista...">
                             <input type="submit" value="Buscar">
                         </p>
-                    </form>
-                    
+                    </form> 
                 </li>
-
-            </ul>
-        </nav>
-        <nav>
-            <ul>
-                <li> <a class="a" href=""> Login </a> </li>
-                <li> <a class="a" href=""> Registro </a> </li>
-            </ul>
-
-        </nav>
+        </ul>
+    </nav>
     </header>
-    <!--fin de encabezado-->
-
+    <!--fin de encabezado--> 
+    
+    <section>
         <ul class="carrusel" id="carrusel">
            <li><img class="ozuna" src="https://images.alphacoders.com/999/999717.jpg" alt="ozuna"></li> 
 
@@ -208,6 +206,7 @@
         </a>
 
         </ul>
+    </section>
 
         <footer>
             <div class="nombres">
@@ -236,8 +235,8 @@
                     <img src="img/instagram.png" alt="instagram">
                 </a>
 
-                <a href="http://127.0.0.1:5500/tfi-prog1-main/home.html">
-                    <img class="tuflow" src="https://is4-ssl.mzstatic.com/image/thumb/Purple124/v4/c1/ae/3d/c1ae3d6d-8629-acd0-6ec6-8fd4e4a1b9b8/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png" alt="Logo TMDB">
+                <a href="home.html">
+                    <img class="tuflow" src="img/logo.png" alt="Logo">
                 </a>
                
             </div>
