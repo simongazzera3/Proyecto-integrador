@@ -8,6 +8,10 @@ let proxy = 'https://cors-anywhere.herokuapp.com/' ;
 
 let urlCanciones = proxy + topchart; 
 
+function images (){
+    imagesLink = "https://api.deezer.com/artist/10583405/image"
+}
+
 fetch(urlCanciones)
     .then( function(respuesta){
 
@@ -28,11 +32,11 @@ fetch(urlCanciones)
 
             console.log(title);
             console.log(cancion);
-            //console.log(imagen);
+            console.log(images);
             
 
             lista.innerHTML+= `
-                <li> <img src="${cancion}" alt="${title}"> <h3> ${title} </h3> </li>
+                <li> <img src="${cancion} " alt="${title}"> <h3> ${title} </h3> </li>
                 `
         }
 
