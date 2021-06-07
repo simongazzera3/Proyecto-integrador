@@ -323,7 +323,17 @@ body {
         padding: 20px;
         height: 300px;
         width: 400px;
-    }
+    } 
+
+.albumHome {
+    list-style: none;
+    display: flex;
+}
+
+.artistasHome {
+    list-style: none;
+    display: flex;
+}
     
     .detallesCancionesHome{
         text-decoration: none;
