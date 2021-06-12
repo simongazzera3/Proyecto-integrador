@@ -30,19 +30,12 @@ fetch(urlCanciones)
              
             console.log(cancion);
             
-            lista.innerHTML+= `
+            lista.innerHTML+= ` <a href="detallescanciones.html">
                 <li> <img src="${imagen}" > <h3> ${title} </h3> </li>
                 `
         }
 
-//alt="${title}" esto lo estaba poniendo dentro de imagen
 
-       /* cancion = datos.data;
-
-        cancion.forEach(function(canciones){
-
-
-        }) */
 
     })
 
@@ -80,17 +73,12 @@ fetch(urlAlbums)
             //console.log(imagen);
             
 
-            lista.innerHTML+= `
+            lista.innerHTML+= ` <a href="detallesalbum.html">
                 <li> <img src="${imagenAlbum}" > <h3> ${title} </h3> </li>
                 `
         }
 
-       /* cancion = datos.data;
-
-        cancion.forEach(function(canciones){
-
-
-        }) */
+      
 
     })
 
@@ -128,17 +116,11 @@ fetch(urlArtistas)
             console.log(cancion);
             
 
-            lista.innerHTML+= `
+            lista.innerHTML+= ` <a href="detallesartistas.html">
                 <li> <img src="${imagenArtistas}" > <h3> ${title} </h3> </li>
                 `
         }
 
-       /* cancion = datos.data;
-
-        cancion.forEach(function(canciones){
-
-
-        }) */
 
     })
 
