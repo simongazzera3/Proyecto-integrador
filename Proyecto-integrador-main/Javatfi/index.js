@@ -25,13 +25,14 @@ fetch(urlCanciones)
             let cancion = canciones[i];
             let imagen = cancion.artist.picture;
             let title = cancion.title;
+            let nombreDeArtista = cancion.artist.name;
             
             console.log(title); 
              
             console.log(cancion);
             
             lista.innerHTML+= ` <a href="detallescanciones.html">
-                <li> <img src="${imagen}" > <h3> ${title} </h3> </li>
+                <li> <img src="${imagen}" > <h3> ${title} </h3> <h3> - ${nombreDeArtista}</h3></li>
                 `
         }
 
