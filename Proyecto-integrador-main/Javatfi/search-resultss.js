@@ -1,5 +1,5 @@
 //js para la página donde se podrán ver los resultados de la búsqueda que se generó en el buscador del header
-
+/*
 window.addEventListener('load', function () { 
 
 let formulario = document.querySelector('form');
@@ -25,3 +25,12 @@ let formulario = document.querySelector('form');
 </script>
 </form> 
 */
+//para hacer lo de onfocus, lo que se tiene que hacer es primero asignarle un id al input que se encuentra en el html.
+// y tambien se va tener q escribir dentro del input un "onfocus=search()", para senalar que el onfocus debe funcionar para esa funcion. 
+//y despues se hae esto que aparece abajo. 
+function search() {
+    
+    document.getElementById("valorresultado").style.backgroundColor = "lightblue";
+
+} 
+
