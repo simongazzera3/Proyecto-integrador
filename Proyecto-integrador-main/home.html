@@ -26,10 +26,11 @@
                 <li> <a class="a" href="playlist.html"> Mi playlist </a> </li>
                 <li> 
                     <form class="form" action="buscador.html" method="GET">
-                        <p>
-                            Buscador <input type="search" name="Buscar"  id="valorresultado" onfocus="search()" placeholder="Cancion, Album, Artista...">
-                            <input type="submit" value="Buscar" onclick="buscaralert()">
-                        </p>
+                        
+                            Buscador <input type="search" name="buscar"  id="valorresultado" value="" class="inputformulario" onfocus="search()" placeholder="Cancion, Album, Artista...">
+                            <button type="submit" name="buscar" > Buscar </button>
+                        
+                        <p class="mensajealerta"> </p>
                     </form> 
                 </li>
             </ul>

@@ -28,9 +28,30 @@ let formulario = document.querySelector('form');
 //para hacer lo de onfocus, lo que se tiene que hacer es primero asignarle un id al input que se encuentra en el html.
 // y tambien se va tener q escribir dentro del input un "onfocus=search()", para senalar que el onfocus debe funcionar para esa funcion. 
 //y despues se hae esto que aparece abajo. 
-function search() {
-    
-    document.getElementById("valorresultado").style.backgroundColor = "lightblue";
 
+
+function search() {
+    document.getElementById("valorresultado").style.backgroundColor = "lightblue";
 } 
+
+
+let formulario = document.querySelector('form')
+
+let campoBuscar = document.querySelector('inputformulario')
+
+let parrafo = document.querySelector('mensajealerta')
+
+formulario.addEventListener("submit", function(event){
+    event.preventDefault();
+
+if (campoBuscar.value == '') {
+    parrafo.innerText = "El campo no debe estar vacio :)";
+ } else if (campoBuscar.value.lenght < 3) {
+     parrafo.innerText = "Escribe al menos tres caracteres."; 
+} else {
+    formulario.submit()
+}
+
+})
+
 
