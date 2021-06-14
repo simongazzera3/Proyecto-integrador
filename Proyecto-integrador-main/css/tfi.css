@@ -40,6 +40,15 @@ header ul li a, header ul li form{
     
 }
 
+.inputformulario{
+    padding: 3px ;
+    margin: 20px 0;
+}
+
+.mensajealerta{
+    color: red;
+}
+
 .carrusel{
     list-style: none;
     display: block;   
@@ -231,6 +240,8 @@ body {
 
 
 
+
+
 @media (min-width:1024px) {
     *{
         box-sizing: border-box;
@@ -269,12 +280,21 @@ body {
         margin: 10px;
         padding: 0px;
     }
-    
+
     header ul li a, header ul li form{
         color: white;
         font-weight: normal;
         padding: 10px;
         display: flex;
+    }
+
+    .inputformulario{
+        padding: 3px ;
+        margin: 0 3px;
+    }
+
+    .mensajealerta{
+        color: red;
     }
     
     header ul{ 
