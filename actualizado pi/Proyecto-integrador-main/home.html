@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/tfi.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/441b2fd9a3.js" crossorigin="anonymous"></script>
+    <title>Tuflow</title>
+</head>
+
+<body>
+    <!--encabezado-->
+    <header>
+             
+        <a href="home.html">
+        <img class="logo-container" src="img/logo.png" alt="Tuflow" style="width:120px;">
+        </a>
+
+        <nav>
+            <ul> 
+                <li> <a class="a" href="generos.html"> Generos </a> </li>
+                <li> <a class="a" href="playlist.html"> Mi playlist </a> </li>
+                <li> 
+                    <form class="form" action="buscador.html" method="GET">
+                        
+                            <input type="search" name="buscar" value="" class="inputformulario" 
+                            onfocus="search()" placeholder="Cancion, Album, Artista...">
+                            <button type="submit" name="buscar" > Buscar </button>
+                           
+                    </form> 
+                    <p class="mensajealerta"> </p>
+                </li>
+            </ul>
+            <script src="Javatfi/search-resultss.js"> </script>
+
+
+    </nav>
+    </header>
+    <!--fin de encabezado--> 
+    
+    <section>
+        <ul class="carrusel" id="carrusel">
+           <li><img class="ozuna" src="https://images.alphacoders.com/999/999717.jpg" alt="ozuna"></li> 
+
+           <li><img src="https://estaticos-cdn.elperiodico.com/clip/f656998a-0b1a-4830-9493-11d12224a63b_alta-libre-aspect-ratio_default_0.jpg" alt="Bad Bunny"></li>
+
+           <li><img src="https://cdn.forbes.co/2020/01/j-balvin-1569828372.67.2560x1440.jpg" alt="J Balvin"></li>
+
+           <li><img src="https://billboard.com.ar/wp-content/uploads/2021/02/unnamed-12.jpg" alt="Maria Becerra"></li>
+
+        </ul>
+
+
+         <h2 class="homeCanciones">Top Canciones Globales</h2>
+
+        <ul class="cancionesHome">
+      
+              <li>
+                    <a class="detallesCancionesHome" href="detallescanciones.html"></a>
+                     <!-- 
+                    <div>
+                        <img src="https://images.genius.com/21df5dd9a63e27196b86d54b3a00ad04.300x300x1.jpg" alt="JB">
+                        <h3>Peaches - Justin Bieber</h3> 
+                    </div>
+                </a>
+                </li>
+           
+                
+            <a class="detallesCancionesHome" href="detallescanciones.html">
+                <li>
+                    <div>
+                        <img src="https://images.genius.com/d4f8b7f993508c8c90483413a15995d1.300x300x1.jpg" alt="El Reja">
+                         <h3>Besame - El Reja</h3>
+                    </div>
+                </li>
+            </a>
+
+        <a class="detallesCancionesHome" href="detallescanciones.html">
+            <li>
+                <div>
+                    <img src="https://i2.wp.com/mcusercontent.com/745cbcf43e33b221a39ec25eb/images/92e60b22-057d-474b-9448-6d714c3f99c0.jpg?w=564&ssl=1" alt="Maria">
+                    <h3>Acaramelao - Maria Becerra</h3>
+                </div>  
+            </li>
+        </a>
+
+        <a class="detallesCancionesHome" href="detallescanciones.html">
+            <li>
+                <div>
+                    <img src="https://i.ytimg.com/vi/UI3pbgnWxK8/maxresdefault.jpg" alt="Selena">
+                    <h3>Baila Conmigo - Selena Gomez</h3>
+                </div>
+            </li>   
+        </a>
+
+        <a class="detallesCancionesHome" href="detallescanciones.html">
+            <li>
+                <div>
+                    <img src="https://images.squarespace-cdn.com/content/v1/5cddb90f302aeb0001f48dac/1610912433294-EVBCAAQ0KAA423JFST63/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdLKTLgsLX9_T7LnpaostY9WYLb0IFNaX6bgMhY2dUNBWIB-7cQgYKo_bDpR6cEVkg/WhatsApp+Image+2021-01-11+at+1.16.31+PM.jpg" alt="Camilo">
+                    <h3>Ropa Cara - Camilo</h3>
+                </div>
+                -->
+            </li>
+        </a>
+
+        </ul>
+
+        <h2 class="homeCanciones">Top Albums</h2>
+
+        <ul class="cancionesHome"> 
+        
+        <ul class="albumHome"> 
+
+        <a class="detallesCancionesHome" href="detallesalbum.html">
+            <li>
+                <!--
+                <div>
+                    <img src="https://elterritorio1.cdn.net.ar/252/elterritorio1/images/70/55/705539_50b45929270c9486a5b39a9002496596910facd8dec237b8c50f73d723241005/xs.webp" alt="JB">
+                    <h3>Justice - Justin Bieber</h3>
+                </div>
+            </li>
+        </a>
+
+        <a class="detallesCancionesHome" href="detallesalbum.html">
+            <li>
+                <div>
+                    <img src="https://images-na.ssl-images-amazon.com/images/I/81%2BOATFXH6L._SY355_.jpg" alt="TW">
+                    <h3>The Highlights - The Weeknd</h3>
+                </div>
+            </li>
+        </a>
+
+        <a class="detallesCancionesHome" href="detallesalbum.html">
+            <li>
+                <div>
+                    <img src="https://revistacosas.mx/wp-content/uploads/2020/03/dua_lipa_ecard_02-750x506.jpg" alt="DL">
+                    <h3>Future Nostalgia - Dua Lipa</h3>
+                </div>
+            </li>
+        </a>
+
+        <a class="detallesCancionesHome" href="detallesalbum.html">
+            <li>
+                <div>
+                    <img src="https://images.genius.com/567b764e878fe32329c4a820687dba9b.1000x1000x1.png" alt="BB">
+                    <h3>El Ultimo Tour del Mundo - Bad Bunny</h3>
+                </div>
+            </li>
+        </a>
+
+        <a class="detallesCancionesHome" href="detallesalbum.html">
+            <li>
+                <div>
+                    <img src="https://images.genius.com/aa1c8b77f382d4d32ad97002ab823680.1000x1000x1.png" alt="BB">
+                    <h3>YHLQMDLG - Bad Bunny</h3>
+                </div>
+                -->
+            </li>
+        </a>
+
+    </ul>
+
+        </ul>
+
+        <h2 class="homeCanciones">Artistas mas escuchados</h2>
+        <ul class="cancionesHome">
+
+        <ul class="artistasHome"> 
+
+        <a class="detallesCancionesHome" href="detallesartistas.html">
+            <li> 
+        <!--
+                <div>
+                    <img src="https://static2.abc.es/media/summum/2019/04/09/drake-cantante-rapero-kzkE--620x349@abc.JPG" alt="Drake">
+                    <h3>Drake</h3>
+                </div>
+            </li>
+        </a>
+
+        <a class="detallesCancionesHome" href="detallesartistas.html">
+            <li>
+                <div>
+                    <img src="https://media.vogue.es/photos/5e8de580ca095800085a1184/16:9/w_1920,c_limit/BillieEilish2-Telekom-Electronic-Beats-Podcast-Image-Vogueglobal-7April20-credit-Vincent-Haycock-.jpg" alt="Bilie">
+                    <h3>Billie Eilish</h3>
+                </div>
+            </li>
+        </a>
+
+        <a class="detallesCancionesHome" href="detallesartistas.html">
+            <li>
+                <div>
+                    <img src="https://www.musicmundial.com/wp-content/uploads/2020/10/Bruno-Mars-regresa-a-la-musica-en-noviembre-con-un-tema-pop-rock-segun-insider-de-confianza.jpg" alt="Bruno">
+                    <h3>Bruno Mars</h3>
+                </div>
+            </li>
+        </a>
+
+        <a class="detallesCancionesHome" href="detallesartistas.html">
+            <li>
+                <div>
+                    <img src="https://yt3.ggpht.com/a/AATXAJxmSen7Ycbah4D5oeQPtyi2CZj1jfpAsYr9QQ=s900-c-k-c0xffffffff-no-rj-mo" alt="Post">
+                    <h3>Post Malone</h3>
+                </div>
+            </li>
+        </a>
+
+        <a class="detallesCancionesHome" href="detallesartistas.html">
+            <li>
+                <div>
+                    <img src="https://playlistmagazine.mx/wp-content/uploads/2020/04/travisscott.jpe" alt="Travis">
+                    <h3>Travis Scott</h3>
+                </div>
+            </li>
+            --> 
+        </a>
+
+    </ul>
+
+        </ul>
+    </section>
+
+    <footer>
+        <div class="nombres">
+            <p>Lucio Fernandez Gutnisky</p>
+            <p>Simon Gazzera</p>
+            <p>Tomas Garcia Poitevin</p>
+        </div>
+
+            <div class="contacto">
+                <a href="mailto:tuflowtfi@gmail.com">Contact</a>
+            </div>
+
+            <div class="redesSociales">
+
+                <a href="https://es-la.facebook.com">
+                    <img src="img/facebook.png" alt="facebook">
+                </a>
+
+                <a href="https://twitter.com/?lang=es">
+                    <img src="img/twitter.png" alt="twitter">
+                </a>
+
+                <a href="https://www.youtube.com/">
+                    <img src="img/youtube.png" alt="youtube">
+                </a>
+
+                <a href="https://www.instagram.com/accounts/login/">
+                    <img src="img/instagram.png" alt="instagram">
+                </a>
+
+                <a href="home.html">
+                    <img class="tuflow" src="img/logo.png" alt="Logo">
+                </a>
+               
+            </div>
+
+        </footer>
+
+<script src="Javatfi/index.js"> </script>
+</body>
+
+</html>
