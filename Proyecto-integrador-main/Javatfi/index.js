@@ -68,6 +68,8 @@ fetch(urlAlbums)
             let cancion = albums[i];
             let imagenAlbum = cancion.artist.picture;
             let title = cancion.title;
+            let nombreDeArtista = cancion.artist.name;
+
 
             console.log(title);
             console.log(cancion);
@@ -75,7 +77,7 @@ fetch(urlAlbums)
             
 
             lista.innerHTML+= ` <a href="detallesalbum.html">
-                <li> <img src="${imagenAlbum}" > <h3> ${title} </h3> </li>
+                <li> <img src="${imagenAlbum}" > <h3> ${title} </h3> <h3> - ${nombreDeArtista}</h3> </li>
                 `
         }
 
