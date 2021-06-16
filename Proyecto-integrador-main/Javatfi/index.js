@@ -23,7 +23,7 @@ fetch(urlCanciones)
 
         for (let i = 0; i < canciones.length; i++) {
             let cancion = canciones[i];
-            let imagen = cancion.artist.picture;
+            let imagen = cancion.artist.picture_big;
             let title = cancion.title;
             let nombreDeArtista = cancion.artist.name;
             
@@ -66,7 +66,7 @@ fetch(urlAlbums)
 
         for (let i = 0; i < albums.length; i++) {
             let cancion = albums[i];
-            let imagenAlbum = cancion.artist.picture;
+            let imagenAlbum = cancion.artist.picture_big;
             let title = cancion.title;
             let nombreDeArtista = cancion.artist.name;
 
@@ -111,7 +111,7 @@ fetch(urlArtistas)
 
         for (let i = 0; i < artistas.length; i++) {
             let cancion = artistas[i];
-            let imagenArtistas = cancion.picture;
+            let imagenArtistas = cancion.picture_big;
             let title = cancion.name;
 
             console.log(title);

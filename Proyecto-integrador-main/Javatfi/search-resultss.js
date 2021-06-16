@@ -64,7 +64,7 @@ fetch( searchLink + cual)
         let titulo = bucle.title; 
 
         let bucle2 = cosasBuscadas[i]; 
-        let foto = bucle2.artist.picture;
+        let foto = bucle2.artist.picture_big;
 
 busqueda.innerHTML+= ` <a href="detallesartistas.html">
 <li> <img src="${foto}" > <h3> ${titulo} </h3></li>  `;
