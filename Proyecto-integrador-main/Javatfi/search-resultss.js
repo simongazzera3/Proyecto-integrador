@@ -41,7 +41,10 @@ window.addEventListener('load', function () {
 let queryStringobj= new URLSearchParams(queryString); 
 
 let cual = queryStringobj.get('buscar'); 
-console.log(cual); 
+console.log(cual);  
+
+let tituloResultado = document.querySelector(".resultadosBusqueda"); 
+tituloResultado.innerText += ` ${cual}`
 
 let proxy = 'https://cors-anywhere.herokuapp.com/' ; 
 
