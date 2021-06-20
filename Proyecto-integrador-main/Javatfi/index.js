@@ -36,8 +36,6 @@ window.addEventListener('load', function() {
                 `
             }
 
-
-
         })
 
     .catch(function(error) {
