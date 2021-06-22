@@ -153,7 +153,7 @@ fetch(searchLinkAlbum + cual)
     console.log(cosasBuscadas);
     if (cosasBuscadas.length === 0) {
         let tituloResultado = document.querySelector(".resultadosBusqueda"); 
-        tituloResultado.innerHTML = "Perdona, no hay resultados para tu busqueda";
+        tituloResultado.innerHTML = "Perdona, no hay resultados para tu busqueda:(";
     
     } else {    
 
