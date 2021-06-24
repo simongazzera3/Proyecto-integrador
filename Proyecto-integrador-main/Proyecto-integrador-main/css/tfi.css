@@ -184,25 +184,7 @@ footer{
     font-size: 15px ;
     color:white;
     line-height: 2;
-    text-align: center;
  }
- .textodetalles h1 {
-    font-size: 50px;
-}
-
-.textodetalles img {
-   max-width: 300px;
-   box-sizing: border-box;
-   flex: none;
-   padding: 20px;
-   height: 300px;
-   width: 300px;
-}
-
-.textodetalles p  {
-   list-style: none;
-   font-size: 30px;
-}
 
  .resultadosBusqueda{
     line-height: 1.3;
