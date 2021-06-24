@@ -66,11 +66,6 @@ window.addEventListener('load', function() {
                 let idTema = cancion.id
 
 
-                console.log(title);
-                console.log(cancion);
-                //console.log(imagen);
-
-
                 lista.innerHTML += ` <a href="detallesalbum.html?id=${idTema}">
                 <li> <img src="${imagenAlbum}" > <h3> ${title} </h3> <h3> - ${nombreDeArtista}</h3> </li>
                 `
@@ -108,11 +103,6 @@ window.addEventListener('load', function() {
                 let imagenArtistas = cancion.picture_big;
                 let title = cancion.name;
                 let idTema = cancion.id
-
-                console.log(title);
-
-                console.log(cancion);
-
 
                 lista.innerHTML += ` <a href="detallesartistas.html?id=${idTema}">
                 <li> <img src="${imagenArtistas}" > <h3> ${title} </h3> </li>

@@ -1,13 +1,7 @@
-//js para la página donde se podrán ver los resultados de la búsqueda que se generó en el buscador del header
-//para hacer lo de onfocus, lo que se tiene que hacer es primero asignarle un id al input que se encuentra en el html.
-// y tambien se va tener q escribir dentro del input un "onfocus=search()", para senalar que el onfocus debe funcionar para esa funcion. 
-//y despues se hae esto que aparece abajo. 
-
 
 function search() {
     document.querySelector(".inputformulario").style.backgroundColor = "lightblue";
 } 
-
 
 let formulario = document.querySelector('form')
 
@@ -105,14 +99,10 @@ fetch(searchLink + cual)
 
     for (let i=0; i < cosasBuscadas.length; i++) { 
 
-        let bucle = cosasBuscadas[i];
-        let titulo = bucle.title; 
-
-        let bucle2 = cosasBuscadas[i]; 
-        let foto = bucle2.artist.picture_big ;         
-
-        let bucle3 = cosasBuscadas[i]; 
-        let version = bucle3.type; 
+        let bucleResultados = cosasBuscadas[i];
+        let titulo = bucleResultados.title; 
+        let foto = bucleResultados.artist.picture_big ;         
+        let version = bucleResultados.type; 
         
 busqueda.innerHTML+= ` 
 <li> <img src="${foto}" > <h3> ${titulo} </h3> <h3> ${version} </h3> </li>  `;
@@ -149,14 +139,10 @@ fetch(searchLinkAlbum + cual)
 
     for (let i=0; i < cosasBuscadas.length; i++) { 
 
-        let bucle = cosasBuscadas[i];
-        let titulo = bucle.title; 
-
-        let bucle2 = cosasBuscadas[i]; 
-        let foto = bucle2.cover_big ;         
-
-        let bucle3 = cosasBuscadas[i]; 
-        let version = bucle3.type; 
+        let bucleResultados = cosasBuscadas[i];
+        let titulo = bucleResultados.title; 
+        let foto = bucleResultados.cover_big ;         
+        let version = bucleResultados.type; 
         
 busqueda.innerHTML+= ` 
 <li> <img src="${foto}" > <h3> ${titulo} </h3> <h3> ${version} </h3> </li>  `;
