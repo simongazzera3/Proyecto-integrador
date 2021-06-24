@@ -30,10 +30,6 @@ if (campoBuscar.value == '') {
 
 window.addEventListener('load', function () { 
 
-    console.log(window);
-    console.log(document);
-    console.log(location.search); 
-
     let busqueda = document.querySelector(".Resultados"); 
 
     let queryString = location.search;
@@ -45,10 +41,7 @@ console.log(cual);
 let tituloResultado = document.querySelector(".resultadosBusqueda"); 
 tituloResultado.innerText += ` ${cual}`
 
-
-
 //artistas
-
 
 let proxy = 'https://cors-anywhere.herokuapp.com/' ; 
 
@@ -73,14 +66,11 @@ fetch(searchLinkArtist + cual)
 
     for (let i=0; i < cosasBuscadas.length; i++) { 
 
-        let bucle = cosasBuscadas[i];
-        let titulo = bucle.name; 
-
-        let bucle2 = cosasBuscadas[i]; 
-        let foto = bucle2.picture_big ;         
-
-        let bucle3 = cosasBuscadas[i]; 
-        let version = bucle3.type; 
+        let bucleResultados = cosasBuscadas[i];
+        
+        let titulo = bucleResultados.name; 
+        let foto = bucleResultados.picture_big ;         
+        let version = bucleResultados.type; 
         
 busqueda.innerHTML+= ` 
 <li> <img src="${foto}" > <h3> ${titulo} </h3> <h3> ${version} </h3> </li>  `;

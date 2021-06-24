@@ -27,10 +27,6 @@ window.addEventListener('load', function() {
                 let title = cancion.title;
                 let nombreDeArtista = cancion.artist.name;
 
-                console.log(title);
-
-                console.log(cancion);
-
                 lista.innerHTML += ` <a href="detallescanciones.html">
                 <li> <img src="${imagen}" > <h3> ${title} </h3> <h3> - ${nombreDeArtista}</h3></li>
                 `
@@ -39,8 +35,7 @@ window.addEventListener('load', function() {
         })
 
     .catch(function(error) {
-        urlCanciones.innerHTML = '<li> El recurso no se encontró :( </li>';
-        console.log(error);
+        console.log("El error fue" + error);
 
     })
 
@@ -84,8 +79,7 @@ window.addEventListener('load', function() {
         })
 
     .catch(function(error) {
-        urlCanciones.innerHTML = '<li> El recurso no se encontró :( </li>';
-        console.log(error);
+        console.log(("El error fue" + error));
 
     })
 
@@ -126,8 +120,7 @@ window.addEventListener('load', function() {
         })
 
     .catch(function(error) {
-        urlArtistas.innerHTML = '<li> El recurso no se encontró :( </li>';
-        console.log(error);
+        console.log("El error fue" + error);
 
     })
 
