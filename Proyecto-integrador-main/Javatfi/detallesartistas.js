@@ -10,12 +10,29 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${codig
     console.log(data);
     let fotoArtista = data.picture
     let nombreArtista = data.name
-    let canciones = data.tracklist
     let ubic = document.querySelector(`.textodetalles`)
 
     ubic.innerHTML +=`
             <h1>${nombreArtista}</h1>
             <img src="${fotoArtista}" alt="${nombreArtista}">
-            <img src="${canciones}" alt="${nombreArtista}">
         `
 }) 
+
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/${codigo}/albums`)
+.then(function(respuestas) {
+    return respuestas.json();
+})
+.then(function(data) {
+    let album = data.data
+    let ubic = document.querySelector(`.listadetallesartista`)
+
+for (let i = 0; i < 5; i++) {
+    let fotosalbums = album[i].cover_medium
+
+    ubic.innerHTML +=`
+    <img src="${fotosalbums}" alt="">
+`
+}
+
+}) 
+
