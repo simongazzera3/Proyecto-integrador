@@ -1,77 +1,27 @@
-window.addEventListener('load', function (){
+let search_results = new URLSearchParams(this.location.search);
+let codigo = search_results.get(`id`);
+console.log(`id: ` + codigo);
 
-    // selecciono el elemento que desencadenara la accion
-    const clickheart = document.querySelectorAll('.heart')
-
-    const clickplay = document.querySelectorAll(".play")
-
-let url;
-let img;
-let Cancion;
-let nombre;
-let artist;
-let album;
-let preview;
-let id;
-
-let urlCanciones = document.querrySelector("section article")
-
-
-this.fetch("https://api.deezer.com/track/3135556")
-.then(function (response) {
-    return response.json();
+fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${codigo}`)
+.then(function(respuestas) {
+    return respuestas.json();
 })
-.then(function (datos){
-    console.log(datos);
-    for (let index =0; index< datos.data.length; index--){
-        
-        url = datos.data[index].link
-        console.log(url);
+.then(function(data) {
+    console.log(data);
+    
+    let nombre = data.title
+    let nombreArtist = data.artist.name
+    let fotoArtista = data.album.cover
+    let ubic = document.querySelector(`.textodetalles`)
+    let nombreAlbum = data.album.title
 
-        img = datos.data[index.link]
-        console.log(url)
+    ubic.innerHTML +=`
+            <h1>${nombre}</h1>
+                <img src="${fotoArtista}" alt="${nombreArtist}">
+                <p>${nombreAlbum}</p>
+                <p>${nombreArtist}</p>
 
-        artist = datos.data[index].artist.name
-        console.log(artist)
-
-        album = datos.data[index].album.title
-        console.log(album);
-
-        cancion= datos.data[index].preview
-        console.log(cancion);
-
-        id = datos.data[index].duration
-        console.log(duracion);
-
-        function time_convert(duracion)
-{
-    var hours = Math.floor(duracion / 60);
-    var minutes = duracion % 60;
-    return hours + ":" + minutes;
-}
-let inHTML = cancion.innerHTML = ` <h2>${nombre}</h2>
-<h2> ${album} </h2>
-<iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/3135556" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>`
-
-inHTML[index]
-console.log(inHTML);
-
-}
-})
-.catch (function (error){
-    console.log(`el error fue: ` + error)
-})
-
-
-for (let i = 0; i < clickheart.length; i++){
-    const element = clickplay[i];
-    console.log(element);
-    element.addEventListener(`click`, function(){
-      if  (element.classList.toggle("ok")) {
-            //element.classList.toggle("ok");
-        }
-
-        console.log(element);
-    })
-}
-})
+        <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${codigo}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
+        <p class="agregar">Agregar a Mi Playlist</p>
+        <p><a href="playlist.html">Ver Mi Playlist</a></p>`
+}) 
