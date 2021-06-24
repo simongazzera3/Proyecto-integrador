@@ -23,6 +23,7 @@ window.addEventListener('load', function() {
 
             for (let i = 0; i < canciones.length; i++) {
                 let cancion = canciones[i];
+                
                 let imagen = cancion.artist.picture_big;
                 let title = cancion.title;
                 let nombreDeArtista = cancion.artist.name;
@@ -60,15 +61,11 @@ window.addEventListener('load', function() {
 
             for (let i = 0; i < albums.length; i++) {
                 let cancion = albums[i];
+
                 let imagenAlbum = cancion.artist.picture_big;
                 let title = cancion.title;
                 let nombreDeArtista = cancion.artist.name;
                 let idTema = cancion.id
-
-
-                console.log(title);
-                console.log(cancion);
-                //console.log(imagen);
 
 
                 lista.innerHTML += ` <a href="detallesalbum.html?id=${idTema}">
@@ -104,15 +101,12 @@ window.addEventListener('load', function() {
 
 
             for (let i = 0; i < artistas.length; i++) {
+
                 let cancion = artistas[i];
+
                 let imagenArtistas = cancion.picture_big;
                 let title = cancion.name;
                 let idTema = cancion.id
-
-                console.log(title);
-
-                console.log(cancion);
-
 
                 lista.innerHTML += ` <a href="detallesartistas.html?id=${idTema}">
                 <li> <img src="${imagenArtistas}" > <h3> ${title} </h3> </li>
