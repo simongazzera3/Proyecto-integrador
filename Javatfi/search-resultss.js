@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 function search() {
     document.querySelector(".inputformulario").style.backgroundColor = "lightblue";
@@ -160,7 +159,6 @@ busqueda.innerHTML+= `
 
 })
 
-=======
 
 function search() {
     document.querySelector(".inputformulario").style.backgroundColor = "lightblue";
@@ -322,4 +320,3 @@ busqueda.innerHTML+= `
 
 })
 
->>>>>>> b41ff5d89e51ba61a5c1e97dff6319d0ad29db99

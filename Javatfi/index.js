@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 window.addEventListener('load', function() {
 
     // canciones
@@ -123,7 +122,6 @@ window.addEventListener('load', function() {
 
     })
 
-=======
 window.addEventListener('load', function() {
 
     // canciones
@@ -248,5 +246,5 @@ window.addEventListener('load', function() {
 
     })
 
->>>>>>> b41ff5d89e51ba61a5c1e97dff6319d0ad29db99
+})
 })
