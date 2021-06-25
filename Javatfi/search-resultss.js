@@ -27,10 +27,10 @@ window.addEventListener('load', function () {
     let busqueda = document.querySelector(".Resultados"); 
 
     let queryString = location.search;
+
 let queryStringobj= new URLSearchParams(queryString); 
 
 let cual = queryStringobj.get('buscar'); 
-console.log(cual);  
 
 let tituloResultado = document.querySelector(".resultadosBusqueda"); 
 tituloResultado.innerText += ` ${cual}`
@@ -51,10 +51,10 @@ fetch(searchLinkArtist + cual)
 .then(function (datos){
 
     let cosasBuscadas = datos.data
-    console.log(cosasBuscadas);
-    if (cosasBuscadas.length === 0) {
+
+    if (cosasBuscadas.length == 0) {
         let tituloResultado = document.querySelector(".resultadosBusqueda"); 
-        tituloResultado.innerHTML = "Perdona, no hay resultados para tu busqueda";
+        tituloResultado.innerText = "Perdona, no hay resultados para tu busqueda";
     
     } else {    
 
@@ -90,16 +90,17 @@ fetch(searchLink + cual)
 .then(function (datos){
 
     let cosasBuscadas = datos.data
-    console.log(cosasBuscadas);
-    if (cosasBuscadas.length === 0) {
+
+    if (cosasBuscadas.length == 0) {
         let tituloResultado = document.querySelector(".resultadosBusqueda"); 
-        tituloResultado.innerHTML = "Perdona, no hay resultados para tu busqueda";
+        tituloResultado.innerText = "Perdona, no hay resultados para tu busqueda";
     
     } else {    
 
     for (let i=0; i < cosasBuscadas.length; i++) { 
 
         let bucleResultados = cosasBuscadas[i];
+
         let titulo = bucleResultados.title; 
         let foto = bucleResultados.artist.picture_big ;         
         let version = bucleResultados.type; 
@@ -130,16 +131,18 @@ fetch(searchLinkAlbum + cual)
 .then(function (datos){
 
     let cosasBuscadas = datos.data
-    console.log(cosasBuscadas);
-    if (cosasBuscadas.length === 0) {
+
+
+    if (cosasBuscadas.length == 0) {
         let tituloResultado = document.querySelector(".resultadosBusqueda"); 
-        tituloResultado.innerHTML = "Perdona, no hay resultados para tu busqueda:(";
+        tituloResultado.innerText = "Perdona, no hay resultados para tu busqueda:(";
     
     } else {    
 
     for (let i=0; i < cosasBuscadas.length; i++) { 
 
         let bucleResultados = cosasBuscadas[i];
+
         let titulo = bucleResultados.title; 
         let foto = bucleResultados.cover_big ;         
         let version = bucleResultados.type; 

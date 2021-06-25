@@ -2,7 +2,7 @@ window.addEventListener('load', function() {
 
     // canciones
 
-    let topchart = "https://api.deezer.com/chart/0/tracks?limit=5";
+    let topchart = "https://api.deezer.com/chart/0/tracks";
 
     let proxy = 'https://cors-anywhere.herokuapp.com/';
 
@@ -21,8 +21,10 @@ window.addEventListener('load', function() {
             let lista = document.querySelector(".cancionesHome");
 
 
-            for (let i = 0; i < canciones.length; i++) {
+            for (let i = 0; i < 5; i++) {
+                
                 let cancion = canciones[i];
+
                 let imagen = cancion.artist.picture_big;
                 let title = cancion.title;
                 let nombreDeArtista = cancion.artist.name;
@@ -42,7 +44,7 @@ window.addEventListener('load', function() {
 
     //albums 
 
-    let urlAlbums = proxy + "https://api.deezer.com/chart/0/albums?limit=5";
+    let urlAlbums = proxy + "https://api.deezer.com/chart/0/albums";
 
 
     fetch(urlAlbums)
@@ -58,8 +60,9 @@ window.addEventListener('load', function() {
             let lista = document.querySelector(".albumHome");
 
 
-            for (let i = 0; i < albums.length; i++) {
+            for (let i = 0; i < 5; i++) {
                 let cancion = albums[i];
+
                 let imagenAlbum = cancion.artist.picture_big;
                 let title = cancion.title;
                 let nombreDeArtista = cancion.artist.name;
@@ -82,7 +85,7 @@ window.addEventListener('load', function() {
 
     //artistas 
 
-    let urlArtistas = proxy + "https://api.deezer.com/chart/0/artists?limit=5";
+    let urlArtistas = proxy + "https://api.deezer.com/chart/0/artists";
 
 
     fetch(urlArtistas)
@@ -98,8 +101,10 @@ window.addEventListener('load', function() {
             let lista = document.querySelector(".artistasHome");
 
 
-            for (let i = 0; i < artistas.length; i++) {
+            for (let i = 0; i < 5; i++) {
+
                 let cancion = artistas[i];
+
                 let imagenArtistas = cancion.picture_big;
                 let title = cancion.name;
                 let idTema = cancion.id
