@@ -65,8 +65,10 @@ fetch(searchLinkArtist + cual)
         let titulo = bucleResultados.name; 
         let foto = bucleResultados.picture_big ;         
         let version = bucleResultados.type; 
+        let idTema= bucleResultados.id
+
         
-busqueda.innerHTML+= ` 
+busqueda.innerHTML+= ` <a href="detallesartistas.html?id=${idTema}"
 <li> <img src="${foto}" > <h3> ${titulo} </h3> <h3> ${version} </h3> </li>  `;
 }
 
@@ -104,8 +106,10 @@ fetch(searchLink + cual)
         let titulo = bucleResultados.title; 
         let foto = bucleResultados.artist.picture_big ;         
         let version = bucleResultados.type; 
+        let idTema= bucleResultados.id;
+
         
-busqueda.innerHTML+= ` 
+busqueda.innerHTML+= ` <a href="detallescanciones.html?id=${idTema}"
 <li> <img src="${foto}" > <h3> ${titulo} </h3> <h3> ${version} </h3> </li>  `;
 }
 
@@ -146,8 +150,10 @@ fetch(searchLinkAlbum + cual)
         let titulo = bucleResultados.title; 
         let foto = bucleResultados.cover_big ;         
         let version = bucleResultados.type; 
+        let idTema= bucleResultados.id;
+
         
-busqueda.innerHTML+= ` 
+busqueda.innerHTML+= ` <a href="detallesalbum.html?id=${idTema}"
 <li> <img src="${foto}" > <h3> ${titulo} </h3> <h3> ${version} </h3> </li>  `;
 }
 
