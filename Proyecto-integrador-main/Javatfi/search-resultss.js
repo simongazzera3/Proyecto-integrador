@@ -31,7 +31,6 @@ window.addEventListener('load', function () {
 let queryStringobj= new URLSearchParams(queryString); 
 
 let cual = queryStringobj.get('buscar'); 
-console.log(cual);  
 
 let tituloResultado = document.querySelector(".resultadosBusqueda"); 
 tituloResultado.innerText += ` ${cual}`
@@ -52,8 +51,6 @@ fetch(searchLinkArtist + cual)
 .then(function (datos){
 
     let cosasBuscadas = datos.data
-
-    console.log(cosasBuscadas);
 
     if (cosasBuscadas.length == 0) {
         let tituloResultado = document.querySelector(".resultadosBusqueda"); 
@@ -94,7 +91,6 @@ fetch(searchLink + cual)
 
     let cosasBuscadas = datos.data
 
-    console.log(cosasBuscadas);
 
     if (cosasBuscadas.length === 0) {
         let tituloResultado = document.querySelector(".resultadosBusqueda"); 
@@ -137,7 +133,6 @@ fetch(searchLinkAlbum + cual)
 
     let cosasBuscadas = datos.data
 
-    console.log(cosasBuscadas);
 
     if (cosasBuscadas.length === 0) {
         let tituloResultado = document.querySelector(".resultadosBusqueda"); 
@@ -148,7 +143,7 @@ fetch(searchLinkAlbum + cual)
     for (let i=0; i < cosasBuscadas.length; i++) { 
 
         let bucleResultados = cosasBuscadas[i];
-        
+
         let titulo = bucleResultados.title; 
         let foto = bucleResultados.cover_big ;         
         let version = bucleResultados.type; 

@@ -22,6 +22,7 @@ window.addEventListener('load', function() {
 
 
             for (let i = 0; i < 5; i++) {
+                
                 let cancion = canciones[i];
 
                 let imagen = cancion.artist.picture_big;
