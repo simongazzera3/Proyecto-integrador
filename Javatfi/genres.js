@@ -1,3 +1,5 @@
+window.addEventListener('load', function(){
+
 let apilink = "https://api.deezer.com/genre";
 
 let proxy = 'https://cors-anywhere.herokuapp.com/';
@@ -36,3 +38,5 @@ fetch(urlGeneros)
 
 
     })
+
+})
