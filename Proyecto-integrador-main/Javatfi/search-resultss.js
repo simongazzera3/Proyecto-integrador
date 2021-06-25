@@ -54,7 +54,7 @@ fetch(searchLinkArtist + cual)
 
     if (cosasBuscadas.length == 0) {
         let tituloResultado = document.querySelector(".resultadosBusqueda"); 
-        tituloResultado.innerHTML = "Perdona, no hay resultados para tu busqueda";
+        tituloResultado.innerText = "Perdona, no hay resultados para tu busqueda";
     
     } else {    
 
@@ -91,10 +91,9 @@ fetch(searchLink + cual)
 
     let cosasBuscadas = datos.data
 
-
-    if (cosasBuscadas.length === 0) {
+    if (cosasBuscadas.length == 0) {
         let tituloResultado = document.querySelector(".resultadosBusqueda"); 
-        tituloResultado.innerHTML = "Perdona, no hay resultados para tu busqueda";
+        tituloResultado.innerText = "Perdona, no hay resultados para tu busqueda";
     
     } else {    
 
@@ -134,9 +133,9 @@ fetch(searchLinkAlbum + cual)
     let cosasBuscadas = datos.data
 
 
-    if (cosasBuscadas.length === 0) {
+    if (cosasBuscadas.length == 0) {
         let tituloResultado = document.querySelector(".resultadosBusqueda"); 
-        tituloResultado.innerHTML = "Perdona, no hay resultados para tu busqueda:(";
+        tituloResultado.innerText = "Perdona, no hay resultados para tu busqueda:(";
     
     } else {    
 
