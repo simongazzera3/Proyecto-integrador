@@ -26,6 +26,5 @@ function buscarTrack(idTrack) {
 
         canciones.innerHTML += '<a href="trackDetail.html?id=' + track.id + '"class=---"'
     })
-}
+} */
 
-});
