@@ -29,7 +29,7 @@ fetch(urlGeneros)
             console.log(title);
             console.log(genero);
 
-            var gen = `<li style="float:left; margin-left:50px;margin-top:20px;" id="` + id + `"><a href="detallesgeneros.html?id=` + id + `">
+            var gen = `<li style="float:left; margin-left:50px;margin-top:20px;" id="` + title + `"><a href="detallesgeneros.html?id=` + id + `">
             <img style="max-width:150px;" src="${imagen}"> <h3> ${title} </h3></a></li>
             `;
             lista.innerHTML += gen;

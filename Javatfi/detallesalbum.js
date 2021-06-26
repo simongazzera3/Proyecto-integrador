@@ -13,10 +13,10 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${codigo
     let genero = data.genres.name
     let fotoAlbum = data.cover
     let fechaAlbum = data.release_date
-    let generoid = data.genre_id
+    let generoid = data.genre
     let ubic = document.querySelector(`.textodetalles`)
 
-    ubic.innerHTML +=`
+    ubic.innerHTML +=  `
             <h1>${nombre}</h1>
             <h2>${nombreArtist}</h2>
             <img src="${fotoAlbum}" alt="${nombreArtist}">

@@ -8,6 +8,17 @@
                 results = regex.exec(location.search);
             return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
         }
+
+        let queryString = location.search;
+
+        let queryStringObj = new URLSearchParams(queryString);
+
+        console.log(queryString); 
+
+        let Id = queryStringObj.get('id'); 
+
+        let tituloResultado = document.querySelector(".titulodedetallegen"); 
+//tituloResultado.innerText += 
         var id = getParameterByName('id');
 
         let apilink2 = "https://api.deezer.com/genre/";
@@ -34,9 +45,6 @@
                     let genero = generos[i];
                     let imagen = genero.picture_big;
                     let title = genero.name;
-
-                    console.log(title);
-                    console.log(genero);
 
                     lista.innerHTML += `<li style="float:left; margin-left:50px;margin-top:20px;"><a href="detallesgeneros.html">
                     <img style="max-width:300px;" src="${imagen}"> <h3> ${title} </h3></a></li>
