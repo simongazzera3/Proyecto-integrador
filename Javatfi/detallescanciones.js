@@ -22,6 +22,11 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/${codigo
                 <p>${nombreArtist}</p>
 
         <iframe title="deezer-widget" src="https://widget.deezer.com/widget/dark/track/${codigo}" width="100%" height="300" frameborder="0" allowtransparency="true" allow="encrypted-media; clipboard-write"></iframe>
-        <p class="agregar">Agregar a Mi Playlist</p>
+        <div class="boton-container">
+         <button  class="boton"> Agregar a mi playlist </button> 
+        </div> 
         <p><a href="playlist.html">Ver Mi Playlist</a></p>`
 }) 
+
+//crear la playlist
+

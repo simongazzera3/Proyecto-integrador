@@ -1,30 +1,25 @@
-
-
 let recuperoStorage = localStorage.getItem('playlist'); 
 let playlist = JSON.parse(recuperoStorage); 
 
-console.log(recuperoStorage);
-console.log(playlist);
+let playlistwrap = document.querySelector('.listarepro')
+let body = document.querySelector('.playlistcontenedor')
 
-/*
-playlist.foreach(function(idTrack){
-    mostrarTrack(idTrack);
-}); 
+if(recuperarStorage == null || recuperoStorage == '[]'){
 
-function buscarTrack(idTrack) {
-    let proxy = 'https://cors-anywhere.herokuapp.com/';
-    let urlSongs = proxy + 'https://api.deezer.com/track/' +idTrack; 
+    playlist =[]
+    playlistwrap.innerHTML += `<h1> Por el momento no hay canciones agregadas </h1>`
+    body.style.height = "100vh"
+}
 
-    fetch(urlSongs)
-    .then(function(response){
-        return response.json();
+else{
+playlist.forEach(function(codigo) {
+    buscarYMostrar(codigo)
+})
+}
+    
 
-    })
-    .then(function(track){
-        console.log(track);
-        let canciones = document.querySelector('.songs')
 
-        canciones.innerHTML += '<a href="trackDetail.html?id=' + track.id + '"class=---"'
-    })
-} */
+
+
+
 
