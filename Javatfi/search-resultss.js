@@ -12,7 +12,7 @@ let queryStringobj= new URLSearchParams(queryString);
 let cual = queryStringobj.get('buscar'); 
 
 let tituloResultado = document.querySelector(".resultadosBusqueda"); 
-tituloResultado.innerText += `${cual}` 
+tituloResultado.innerText += ` ${cual}` 
 
 //artistas
 
