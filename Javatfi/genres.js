@@ -25,9 +25,6 @@ fetch(urlGeneros)
             let title = genero.name;
             let id = genero.id;
 
-            console.log(id);
-            console.log(title);
-            console.log(genero);
 
             var gen = `<li style="float:left; margin-left:50px;margin-top:20px;" id="` + title + `"><a href="detallesgeneros.html?id=` + id + `">
             <img style="max-width:150px;" src="${imagen}"> <h3> ${title} </h3></a></li>

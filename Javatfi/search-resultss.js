@@ -118,7 +118,7 @@ fetch(searchLinkAlbum + cual)
 
     if (cosasBuscadas.length == 0) {
         let tituloResultado = document.querySelector(".resultadosBusqueda"); 
-        tituloResultado.innerText = "Perdona, no hay resultados para tu busqueda:(";
+        tituloResultado.innerText = "Perdona, no hay resultados para tu busqueda";
     
     } else {    
 

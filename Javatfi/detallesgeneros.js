@@ -41,13 +41,16 @@
                 let lista = document.querySelector(".detallesVariosGeneros");
 
 
-                for (let i = 1; i < generos.length; i++) {
+                for (let i = 0; i < generos.length; i++) {
                     let genero = generos[i];
                     let imagen = genero.picture_big;
                     let title = genero.name;
+                    let idArtistagen = genero.id
 
-                    lista.innerHTML += `<li style="float:left; margin-left:50px;margin-top:20px;"><a href="detallesgeneros.html">
-                    <img style="max-width:300px;" src="${imagen}"> <h3> ${title} </h3></a></li>
+
+                    lista.innerHTML += `  <a href="detallesartistas.html?id=${idArtistagen}"> 
+                    
+                    <img style="max-width:300px;" src="${imagen}"> <h3> ${title} </h3> </a></li>
                     `;
                 }
 

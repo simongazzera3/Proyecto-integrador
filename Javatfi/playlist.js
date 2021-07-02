@@ -36,10 +36,12 @@ function buscarYMostrarFavoritos(cancionId) {
     let nombreArtist = data.artist.name
     let fotoArtista = data.album.cover
     let nombreAlbum = data.album.title
+    let idTema = data.id
 
-            lista.innerHTML += `
-            <h1>${nombre}</h1>
-                <img src="${fotoArtista}" alt="${nombreArtist}">
+
+            lista.innerHTML += ` 
+           <a href="detallescanciones.html?id=${idTema}"> <h2>${nombre} </h2> 
+                <img src="${fotoArtista}" alt="${nombreArtist}"> </a> 
                 <p> ${nombreAlbum}</p>
                 <p>${nombreArtist}</p>
 
