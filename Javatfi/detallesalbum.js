@@ -25,6 +25,7 @@ fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${codigo
         `
 }) 
 
+
 fetch(`https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/${codigo}/tracks`)
 .then(function(respuestas) {
     return respuestas.json();

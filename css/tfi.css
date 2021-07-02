@@ -104,6 +104,10 @@ h3{
     font-weight: normal;
 }
 
+.textoFav {
+    color: cornsilk;
+}
+
 .cancionesHome {
     list-style: none;
     display: block;
@@ -280,6 +284,25 @@ footer{
 
 body {
     font-family: 'Montserrat', sans-serif;
+}
+
+.detallealbumjs {
+    color: pink;
+    text-align: center;
+    font-weight: normal;
+}
+.detallealbumjs h2 {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+h2{
+    color:cornsilk
+}
+
+.miPlaylist {
+    text-align: center;
 }
 
 
@@ -547,15 +570,6 @@ body {
         text-align: center;
         font-weight: normal;
     }
-    .detallealbumjs {
-        color: white;
-        text-align: center;
-        font-weight: normal;
-    }
-    .detallealbumjs h1 {
-        color: red;
-        text-align: center;
-        font-weight: normal;
-    }
+    
 
 } 

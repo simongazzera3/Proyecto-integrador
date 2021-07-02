@@ -1,26 +1,5 @@
 
-function search() {
-    document.querySelector(".inputformulario").style.backgroundColor = "lightblue";
-} 
 
-let formulario = document.querySelector('form')
-
-let campoBuscar = document.querySelector('.inputformulario')
-
-let parrafo = document.querySelector('.mensajealerta')
-
-formulario.addEventListener("submit", function(event){
-    event.preventDefault();
-
-if (campoBuscar.value == '') {
-    parrafo.innerText = "El campo no debe estar vacio :)";
- } else if (campoBuscar.value.length < 3) {
-    parrafo.innerText = "Escribe al menos tres caracteres :)"; 
-} else {
-    formulario.submit()
-}
-
-}) 
 
 window.addEventListener('load', function () { 
 
@@ -33,7 +12,7 @@ let queryStringobj= new URLSearchParams(queryString);
 let cual = queryStringobj.get('buscar'); 
 
 let tituloResultado = document.querySelector(".resultadosBusqueda"); 
-tituloResultado.innerText += ` ${cual}` 
+tituloResultado.innerText += `${cual}` 
 
 //artistas
 
@@ -163,10 +142,6 @@ busqueda.innerHTML+= ` <a href="detallesalbum.html?id=${idTema}"
     console.log(error);
 })
 
-setTimeout(function load(){
-    let loader = document.querySelector('.loader')
-    loader.style.display = 'none'
-}, 2000)
 
 })
 
